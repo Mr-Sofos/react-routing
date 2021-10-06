@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PostList = ({ posts }) => {
   return (
     <>
-      {posts.map((posts) => (
-        <h1 key={posts.id}>{posts.label}</h1>
+      {posts.map((post) => (
+        <Link to={`posts/${post.id}`} key={post.id}>
+          <h3>{post.label}</h3>
+        </Link>
       ))}
     </>
   );

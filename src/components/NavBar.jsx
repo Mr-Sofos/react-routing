@@ -16,9 +16,6 @@ const NavBar = () => {
       <li>
         <Link to='/dashboard'>Dashboard</Link>
       </li>
-      <li>
-        <Link to='/dashboard/stats'>Dashboard Stats</Link>
-      </li>
     </ul>
   );
 };

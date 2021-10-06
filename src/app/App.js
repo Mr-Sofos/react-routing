@@ -4,7 +4,6 @@ import Home from "../components/Home";
 import Login from "../components/Login";
 import Posts from "../components/Posts";
 import Dashboard from "../components/Dashboard";
-import Stats from "../components/Stats";
 import NotFound from "../components/NotFound";
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/login' component={Login} />
-        <Route path='/dashboard/stats' component={Stats} />
         <Route path='/dashboard' component={Dashboard} />
         <Route path='/posts/:postId?' component={Posts} />
         <Route path='/404' component={NotFound} />
